@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Gastos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/images-PhotoRoom.png-PhotoRoom.png" type="image/x-icon">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="cabecalho">
+
+        <div class="pessoa">
+            <img src="img/FotoLeosite.png" alt="Leonardo">
+            <div class="descricao">
+                <h1>Leonardo Araujo 20</h1>
+                <p>Estudante de Ciência da Computação na Universidade Federal de Viçosa - Campus Florestal</p>
+            </div>
+        </div>
+
+        <div class="valor-total">
+            <h1>Quem está devendo?</h1>
+            <h1 id="nome-devedor">Ninguém</h1>
+            <h2 id="valor-devedor">R$00.00</h2>
+        </div>
+
+        <div class="pessoa">
+            <img src="img/fotolucas.png" alt="Lucas">
+            <div class="descricao">
+                <h1>Igor Lucas 23</h1>
+                <p>Estudante de Ciência da Computação na Universidade Federal de Viçosa - Campus Florestal</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="adicionar-compra">
+
+        <div class="formulario-adicionar-compra">
+            <h1 >Adicionar compra</h1>
+
+            <label for="titulo-compra">Título*</label>
+            <input type="text" id="titulo-compra" placeholder="Jantar domingo">
+
+            <label for="lugar-compra">Lugar da Compra*</label>
+            <input type="text" id="lugar-compra" placeholder="Damasco">
+
+            <label for="valor-compra">Valor*</label>
+            <input type="number" id="valor-compra" placeholder="100">
+
+            <label for="itens-compra">Itens <a href="http://nfce.fazenda.mg.gov.br/portalnfce/sistema/consultaarg.xhtml" target="_blank" id="site-fazenda">(Site da Fazenda)</a></label><br>
+            <textarea id="itens-compra"></textarea><br>
+
+            <label for="quem-compra">Selecione quem pagou*</label><br>
+            <select name="quem-compra" id="quem-compra">
+                <option value="nenhum">Escolha alguém</option>
+                <option value="Igor">Igor Lucas dos Santos Braz</option>
+                <option value="Leonardo">Leonardo Araujo Resende Aguiar</option>
+            </select>
+
+            <div class="enviar-notinha">
+                <label for="notinha-compra">Envie uma foto da notinha</label><br>
+                <input type="file" name="notinha-compra" id="notinha-compra">
+            </div>
+
+            <button id="adicionar-compra">Adicionar compra ✅</button>
+        </div>
+
+        <div class="selecionar-quem-comprou-itens">
+            <h1>Escolha quem comprou</h1>
+            <div>
+                <button id="finalizar-alimentos-quem-comprou">Finalizar escolha dos produtos</button>
+                <div class="auxiliar-display">
+                    <div class="valor-cada-pagar">
+                        <h1>Leonardo</h1>
+                        <p>Total R$ <span class="cada-um-paga-leonardo">00.00</span></p>
+                    </div>
+                    <div class="valor-cada-pagar">
+                        <h1>Igor</h1>
+                        <p>Total R$ <span class="cada-um-paga-igor">00.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="pagamentos">
+       
+    </div>
+
+</body>
+</html>

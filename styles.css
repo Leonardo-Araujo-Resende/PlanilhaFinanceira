@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat','Arial';
+}
+
+:root{
+    --corEscura: #05272B;
+    --corMeio: #2d472f;
+    --corMeioPoucaOpacidade: #2d472fb9;
+    --corClara: #93DB9A;
+    --corClaraPoucaOpacidade: #93db9abd;
+    --corCinza: rgba(192, 192, 192, 0.751);
+} 
+
+body{
+    margin: 8px 8px;
+    background: url(img/textura-escura-para-superficie.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* --------------------------------------------------------------- */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 200px;
+}
+
+/* --------------------------------------------------------------- */
+.pessoa{
+    width: 30%;
+    background-color: var(--corClara);
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.descricao{
+    padding: 5px;
+}
+
+.descricao h1{
+    color: var(--corEscura);
+    font-size: 20px;
+}
+.descricao p{
+    color: var(--corMeio);
+    font-size: 13px;
+}
+
+.pessoa img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+
+/* --------------------------------------------------------------- */
+
+.valor-total{
+    background-color: var(--corMeio);
+    width: 38%;
+    padding: 10px;
+    color: var(--corClara);
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.valor-total h1{
+    text-align: center;
+}
+
+.valor-total h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 5px auto 0;
+    border: 1px solid var(--corClara);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 40%;
+}
+/* --------------------------------------------------------------- */
+
+.pagamentos{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------------------------------------- */
+
+.pagamento{
+    display: flex;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+/* --------------------------------------------------------------- */
+
+.pessoa-esquerda, .pessoa-direita{
+    width: 30%;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    color: var(--corClara);
+    padding: 20px;
+    border: 1px solid var(--corClara);
+    border-radius: 5px;
+}
+
+/* --------------------------------------------------------------- */
+
+.descricao-compra{
+    width: 38%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--corClara);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--corClara);
+}
+
+.descricao-compra p{
+    margin: 15px 0;
+}
+
+.descricao-compra-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--corClara);
+}
+
+.descricao-compra-cabecalho h1{
+    text-align: center;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.descricao-compra-cabecalho p{
+    color: var(--corClaraPoucaOpacidade);
+}
+
+.descricao-compra-dados{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao-compra-dados p{
+    font-size: 14px;
+    color: var(--corClaraPoucaOpacidade);
+}
+
+/* --------------------------------------------------------------- */
+
+.auxiliar-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------- */
+
+.dados-compra{
+    max-width: 48%;
+    width: 48%;
+}
+
+.dados-compra h2{
+    border: 1px solid var(--corClara);
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* --------------------------------------------------------------- */
+
+#notinha{
+    cursor: pointer;
+    transition: 0.3s;
+    max-width: 180px;
+    max-height: 200px;
+}
+
+#notinha:hover{
+    scale: 1.5;
+}
+
+.notinha{
+    width: 48%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.notinha img{
+    max-width: 200px;
+    max-height: 100%;
+}
+
+/* --------------------------------------------------------------- */
+
+.data-transacao{
+    color: var(--corClaraPoucaOpacidade);
+}
+
+.dados-transacao{
+    margin: 15px 0;
+    max-width: 48%;
+}
+
+.dados-transacao p{
+    color: var(--corClara);
+    font-size: 15px;
+}
+
+.dados-transacao h2{
+    border: 1px solid var(--corClara);
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: var(--corClaraPoucaOpacidade);
+
+}
+
+.dados-transacao button{
+    padding: 15px 0;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;   
+    background-color: var(--corMeio);
+    color: white;
+    border: none;
+}
+
+.dados-transacao button:hover{
+    opacity: 0.7;
+    scale: 0.95;
+}
+
+/* --------------------------------------------------------------- */
+
+.adicionar-compra{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+/* --------------------------------------------------------------- */
+
+.formulario-adicionar-compra{
+    width: 38%;
+    padding: 20px 25px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--corClara);
+    border-radius: 10px;
+}
+corEscura
+.formulario-adicionar-compra h1{
+    font-size: 25px;
+}
+
+.formulario-adicionar-compra input[type="text"],
+.formulario-adicionar-compra input[type="number"]{
+    width: 100%;
+    padding: 5px 0 5px 3px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--corMeio);
+    color: white;
+}
+
+.formulario-adicionar-compra input[type="text"]:focus,
+.formulario-adicionar-compra input[type="number"]:focus{
+    border-bottom: 1px solid var(--corClara);
+}
+
+.formulario-adicionar-compra input::placeholder{
+    color: var(--corCinza);
+}
+
+.formulario-adicionar-compra label{
+    font-size: 14px;
+    color: var(--corClara);
+}
+
+.formulario-adicionar-compra button{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--corClara);
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    background-color: var(--corMeio);
+    color: var(--corClara);
+    font-weight: 600;
+}
+
+.formulario-adicionar-compra button:hover{
+    opacity: 0.5;
+}
+
+.formulario-adicionar-compra select{
+    background-color: var(--corMeio);
+    color: var(--corCinza);
+    margin: 5px 0;
+    padding: 5px 5px;
+}
+
+.formulario-adicionar-compra option{
+    color: white;
+    font-size: 15px;
+}
+
+.formulario-adicionar-compra input[type="file"]{
+    color: var(--corClara);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.enviar-notinha{
+    margin: 15px 0 0 0;
+}
+
+.formulario-adicionar-compra h1{
+    padding: 10px 0;
+    color: var(--corClara);
+    text-align: center;
+}
+
+.formulario-adicionar-compra textarea{
+    background-color: transparent;
+    border: 1px solid var(--corClaraPoucaOpacidade);
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    max-height: 200px;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario-adicionar-compra textarea:focus{
+    border: 1px solid var(--corClara);
+}
+
+/* --------------------------------------------------------------- */
+
+.formulario-pessoa-adiciona-transferencia{
+    width: 30%;
+    background-color: rgb(213, 213, 213);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-pessoa-adiciona-transferencia h1{
+    margin: 10px 0 20px 0;
+}
+
+.formulario-pessoa-adiciona-transferencia input{
+    width: 100%;
+    padding: 5px 0 5px 3px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    
+}
+
+.formulario-pessoa-adiciona-transferencia label{
+    margin: 10px 0;
+}
+/* --------------------------------------------------------------- */
+
+.selecionar-quem-comprou-itens{
+    color: var(--corClara);
+    width: 38%;
+    padding: 20px 25px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--corClara);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.selecionar-quem-comprou-itens h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* --------------------------------------------------------------- */
+    
+.item-a-selecionar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0;
+    border-bottom: 1px solid var(--corClaraPoucaOpacidade);
+
+}
+
+.item-a-selecionar .nome-itens{
+    width: 70%;
+    text-transform: lowercase;
+
+}
+
+.item-a-selecionar .preco-itens{ 
+    width: 20%;
+}
+
+.quem-comprou-itens input[type="checkbox"]{
+    cursor: pointer;
+
+}
+
+.quem-comprou-itens{
+    width: 10%;
+
+}
+
+.detalhes-compra-itens{
+    width: 15%;
+}
+
+#finalizar-alimentos-quem-comprou{
+    width: 100%;
+    padding: 7px 0;
+    margin: 10px auto 0;
+    color: var(--corClaraPoucaOpacidade);
+    background-color: var(--corMeioPoucaOpacidade);
+    border: 1px solid var(--corClaraPoucaOpacidade);
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#finalizar-alimentos-quem-comprou:hover{
+    opacity: 0.7;
+}
+
+/* --------------------------------------------------------------- */
+.valor-cada-pagar{
+    width: 48%;
+    border: 1px solid var(--corClaraPoucaOpacidade);
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.valor-cada-pagar h1{
+    text-align: center;
+}
+
+.valor-cada-pagar p{
+    text-align: center;
+    padding: 5px;
+}
+
+/* --------------------------------------------------------------- */
+
+.detalhes-compra{
+    padding: 15px 0;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;   
+    background-color: var(--corClaraPoucaOpacidade);
+    color: var(--corMeio);
+    border: none;
+}
+
+.detalhes-compra:hover{
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------------------- */
+#site-fazenda{
+    text-decoration: none;
+    color: var(--corClaraPoucaOpacidade);
+}
+/* --------------------------------------------------------------- */
+
+.hide{
+    display: none;
+}
+
